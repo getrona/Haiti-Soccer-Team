@@ -1,7 +1,7 @@
 <h2>Roster </h2>
 <p>Here is definitive list of the players on the national team</p>
 
-<div *ngFor="let player of players" (click)="goToDetailPage(player)" class="panel panel-default">
+<div *ngFor="let player of players | async"(click)="goToDetailPage(player)" class="panel panel-default">
   <div class="panel body">
     <h3><em>{{player.name}}</em> {{player.position}}</h3>
   </div>

@@ -1,0 +1,26 @@
+{ "players": [{
+    "name": "Getro Naissance",
+    "jersey": "10",
+     "position": "defense",
+     "details": "Usually starts in the second Half",
+     "id": "5"
+   }, {
+     "name": "Getro Naissance",
+     "jersey": "9",
+      "position": "striker",
+      "details": "Usually starts in the second Half",
+      "id": "3"
+   }, {
+     "name": "Getro Naissance",
+     "jersey": "7",
+      "position": "offense",
+      "details": "Usually starts in the second Half",
+      "id": "2"
+   }, {
+     "name": "Getro Naissance",
+     "jersey": "5",
+      "position": "mid-field",
+      "details": "Usually starts in the second Half",
+      "id": "1"
+}]
+}
