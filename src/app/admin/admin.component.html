@@ -1,0 +1,34 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title" >Add New Player to The Roster</h3>
+  </div>
+
+  <div>
+    <div>
+      <label>Player name:</label>
+      <br>
+      <input #newName>
+    </div>
+
+    <div>
+      <label>Player Jersey Number:</label>
+      <br>
+      <input #newJersey>
+    </div>
+
+    <div>
+      <label>Player Position:</label>
+      <br>
+      <textarea #newPosition></textarea>
+    </div>
+
+    <div>
+      <label>Additional Details:</label>
+      <br>
+      <textarea #newDetails></textarea>
+    </div>
+
+    <button (click)="submitForm(newName.value, newJersey.value, newPosition.value, newDetails.value); newName.value=''; newJersey.value=''; newPosition.value=''; newDetails.value=''">Add</button>
+  </div>
+
+</div>
