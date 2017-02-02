@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { PlayerService } from '../player.service';
 
 @Component({
   selector: 'app-edit-player',
@@ -6,10 +7,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./edit-player.component.css']
 })
 export class EditPlayerComponent implements OnInit {
+  @Input() selectedPlayer;
 
-  constructor() { }
+  constructor(private playerService: PlayerService) { }
 
   ngOnInit() {
+  }
+
+  beginUpdatingPlayer(playerToUpdate){
+    this.playerService.updatePlayer(playerToUpdate);
+  }
+
+  beginDeletingPlayer(playerToDelete){
+    if(confirm("Are you sure you want to remove this player?")){
+      this.playerService.deletePlayer(playerToDelete);
+    }
   }
 
 }

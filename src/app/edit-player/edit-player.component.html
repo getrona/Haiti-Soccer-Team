@@ -1,3 +1,20 @@
-<p>
-  edit-player works!
-</p>
+<h4>Edit Player</h4>
+
+<label>New Player Name:</label>
+<input [(ngModel)]="selectedPlayer.name">
+<br>
+
+<label>New Player Jersey Number:</label>
+<input [(ngModel)]="selectedPlayer.jersey">
+<br>
+
+<label>New Position:</label>
+<input [(ngModel)]="selectedPlayer.position">
+<br>
+
+<label>New Details:</label>
+<input [(ngModel)]="selectedPlayer.details">
+
+<button (click)="beginUpdatingPlayer(selectedPlayer)">Update</button>
+<hr>
+<button (click)="beginDeletingPlayer(selectedPlayer)">Delete</button>
